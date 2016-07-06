@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Document</title>
+</head>
+<body>
+<div id="everything">
+    <h1>A heading!</h1>
+    <p>Here's some text!</p>
+    <p>Here's a second set of text!</p>
+    <div class="holder">
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+    </div>
+    <div class="holder">
+        <ol>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+            <li>List Item 6</li>
+        </ol>
+    </div>
+    <div id="change-me">This part needs to change!</div>
+    <div id="secret">We should hide this!</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script>
+  var a = 4;
+  console.log(a);
+
+  $('body').css('background-color', 'red');
+  $('h1').css('color', 'blue');
+  $('#everything').css('font-size', '130%');
+  $('.holder').css('border', 'solid', 'black');
+  $('ul li').css('font-weight', 'bold');
+  $('p').css('color', 'green');
+  $('#secret').css('display', 'none');
+  $('#secret').css('display', 'block');
+  $('#change-me').text("I'm changed!!");
+  $('li').text("I'm changed, too.");
+  $('li').append(" I'm added!!");
+  $('#everything').append("<ol><li>1</li><li>2</li><li>3</li></ol>");
+
+</script>
+
+</body>
+</html>

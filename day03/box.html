@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>box excersize</title>
+    <style>
+      .main {
+        font-weight: bold;
+        background-color: #e8f8ff;
+      }
+
+      #header {
+        background-color: #00688b;
+        box-sizing: border-box;
+        width: 200px;
+        height: 300px;
+        border: 5px solid red;
+        padding: 5px, 3px;
+        margin: auto;
+      }
+
+      #content {
+        background-color: #ffbdbd;
+        box-sizing: border-box;
+        width: 500px;
+        height: auto;
+        border: 1px dot blue;
+        padding: 100px 30px 50px 400px;
+        margin: 25px 40px 12px 60px;
+      }
+
+      #footer {
+        background-color: #d26046;
+        box-sizing: border-box;
+        width: 1000px;
+        height: 400px;
+        border: 2px solid green;
+        padding: 70px;
+        margin: 40px;
+      }
+
+      #image {
+        width: 400px;
+        height: auto;
+        border: 13px dot red;
+        padding: 200px;
+        margin: 500px;
+      }
+
+      .boxbox {
+        float: left;
+        margin-left: 10px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid gray;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div style="width: 960px; margin: 0 auto">
+      <div class="main" id="header">
+        <p>박스1입니다.박스1입니다.</p>
+        <p>박스1입니다.박스1입니다.</p>
+        <p>박스1입니다.박스1입니다.</p>
+        <p>박스1입니다.박스1입니다.</p>
+        <p>박스1입니다.박스1입니다.</p>
+      </div>
+
+      <div id="content">
+        <p>박스2입니다.박스2입니다.</p>
+        <p>박스2입니다.박스2입니다.</p>
+        <p>박스2입니다.박스2입니다.</p>
+        <p>박스2입니다.박스2입니다.</p>
+        <p>박스2입니다.박스2입니다.</p>
+      </div>
+
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Donald_Duck.svg/618px-Donald_Duck.svg.png" id="image">
+      </div>
+
+      <div class="main" id="footer">
+        <p>박스3입니다.박스3입니다.</p>
+        <p>박스3입니다.박스3입니다.</p>
+        <p>박스3입니다.박스3입니다.</p>
+        <p>박스3입니다.박스3입니다.</p>
+        <p>박스3입니다.박스3입니다.</p>
+      </div>
+
+      <div id="boxbox">
+        <div class="boxbox"></div>
+        <div class="boxbox"></div>
+        <div class="boxbox"></div>
+        <div class="boxbox"></div>
+      </div>
+
+    </div>
+  </body>
+</html>

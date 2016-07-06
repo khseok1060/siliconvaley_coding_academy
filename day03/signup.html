@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+    <h1>환영합니다!!</h1>
+    <h2>회원가입 페이지입니다.</h2>
+    <h3>커뮤니티를 사용하시려면 하단의 form을 작성하셔야 합니다.</h3>
+    <hr></hr>
+    <h4>기본 항목</h4>
+    <form action="http://52.78.21.63/send/dko83ko@gmail.com"
+  method="POST">
+      <label for="name">이름</label>
+      <input type="text" name="name" id="name" size="30" placeholder="이름을 입력해주세요" autofocus required><br><br>
+
+      <label for="id">id</label>
+      <input type="text" name="id" id="id" size="30" placeholder="id를 입력해주세요" required><br><br>
+
+      <label for="pwd">Password</label>
+      <input type="password" name="pwd" id="pwd" size="30" placeholder="password를 입력해주세요" required><br><br>
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" size="30" placeholder="email을 입력해주세요" required><br><br>
+      <hr></hr>
+
+      <h4>상세 항목</h4>
+      <label for="gender">성별</label>
+      <input type="radio" name="gender" value="male" checked required><span>남성</span>
+      <input type="radio" name="gender" value="female" required><span>여성</span>
+      <input type="radio" name="gender" value="not_sure" required><span>Not sure</span><br><br>
+
+      <label for="SNS">선호하는 SNS</label>
+      <select name="SNS">
+        <optgroup label="선호 SNS">
+          <option value="facebook">Facebook</option>
+          <option value="twitter">Twitter</option>
+          <option value="google_plus">Google Plus</option>
+          <option value="instagram">Instagram</option>
+          <option value="etc">Etc</option>
+        </optgroup>
+      </select><br><br>
+
+      <label for="hobby">취미(복수선택가능)</label>
+      <input type="checkbox" name="hobby" value="sports"><span>스포츠</span>
+      <input type="checkbox" name="hobby" value="game"><span>게임</span>
+      <input type="checkbox" name="hobby" value="music_listening"><span>음악감상</span>
+      <input type="checkbox" name="hobby" value="trip"><span>여행</span>
+      <input type="checkbox" name="hobby" value="read_books"><span>독서</span>
+      <input type="checkbox" name="hobby" value="etc"><span>기타</span><br><br>
+
+
+      <label for="self_introduction">간단한 자기소개 부탁드립니다.</label>
+      <textarea name="self_introduction" rows="5" cols="20" placeholder="100자이내로 작성하세요"></textarea><br><br>
+
+      <hr></hr>
+      <input type="submit">
+    </form>
+  </body>
+</html>

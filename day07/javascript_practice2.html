@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Exercise2</title>
+  </head>
+  <body>
+    <div id="greeting"></div>
+
+    <script>
+      var name = prompt("이름이 뭐에요?");
+      var age = prompt("나이는 얼마인가요?");
+      var gender = prompt("성별은 무엇인가요?");
+      var is_member = prompt("이미 가입하셨나요?");
+
+      if (age <= 21 || is_member === '아니요') {
+        if (gender === '남') {
+          alert(name + " 사장님께서는 클럽에 가입할 수 없습니다.");
+        } else if (gender === '여') {
+          alert(name + " 사모님께서는 클럽에 가입할 수 없습니다.");
+        }
+      } else {
+        if (gender === '남') {
+          alert('미스터 '+ name +'님의 웹사이트 방문을 환영합니다.');
+          var thirsty = prompt("목마르신가요?");
+          if (thirsty === "네") {
+            var drink_of_choice = prompt("무엇을 드실건가요?");
+            if (drink_of_choice === '우유') {
+              alert('강퇴입니다.');
+              window.location = "http://www.google.com";
+            } else {
+              alert('네. '+ name + '님 지금 즉시' + drink_of_choice + " 드리겠습니다" );
+            }
+          }
+        } else if (gender === '여') {
+          alert('미스 '+ name +'님의 웹사이트 방문을 환영합니다.');
+          var thirsty = prompt("목마르신가요?");
+          if (thirsty === "네") {
+            var drink_of_choice = prompt("무엇을 드실건가요?");
+            if (drink_of_choice === '우유') {
+              alert('강퇴입니다.');
+              window.location = "http://www.google.com";
+            } else {
+              alert('네. '+ name + '님 지금 즉시' + drink_of_choice + " 드리겠습니다" );
+            }
+          }
+        }
+      }
+
+
+
+    </script>
+  </body>
+</html>

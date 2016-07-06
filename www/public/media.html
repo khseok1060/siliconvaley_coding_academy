@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Media Page</title>
+    <style>
+      body {
+        background: url("http://wallpapercave.com/wp/Hkys9Ar.jpg");
+      }
+
+      h1 {
+        font-style: italic;
+        color: white;
+      }
+
+      p {
+        font-family: 'Times New Roman';
+      }
+
+      #header {
+        font-weight: bold;
+      }
+
+      #intro {
+        text-decoration: underline;
+      }
+
+      #web-development {
+        font-style: italic;
+        text-indent: 10px;
+        color: snow;
+      }
+
+      #python {
+        font-style: oblique;
+        text-indent: 10px;
+        color: tan;
+      }
+
+      #text {
+        background: url("https://i.ytimg.com/vi/PpCkQwCKHMI/maxresdefault.jpg");
+      }
+
+      #text p {
+        color: snow;
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+      .video-size {
+        width: 560px;
+        height: 315px;
+      }
+
+      .align-center {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="header" class="align-center">
+      <h1>Media Page입니다.</h1>
+    </div>
+    <hr></hr>
+
+    <div class="align-center">
+      <p id="intro">Welcome you all! Enjoy this page with music.</p>
+      <audio controls>
+        <source src="music/bg_music.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="clearfix" style="max-width: 1200px; margin: 0 auto;">
+      <div style="float: left">
+        <div id="web-development">
+          <h3>Web Development</h3>
+        </div>
+
+        <div>
+          <iframe class="video-size" src="https://www.youtube.com/embed/AkjMCbSvTto?list=PLAwxTw4SYaPlLXUhUNt1wINWrrH9axjcI" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div style="float: left">
+        <div id="python">
+          <h3>Python</h3>
+        </div>
+
+        <div>
+          <iframe class="video-size" src="https://www.youtube.com/embed/X0FoelOIZM0?list=PLAwxTw4SYaPnYajEbZvqtcVWQ6XGhvtOW" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <script>
+      console.log("프로그래밍은 정말 재미있습니다!!");
+    </script>
+  </body>
+</html>

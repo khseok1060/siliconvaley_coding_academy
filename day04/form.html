@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>form excercise</title>
+    <style>
+      input {
+        padding: 6px 12px 6px 12px;
+        border: 1px solid #665544;
+        color: blue;
+      }
+
+      input.submit:hover {
+        background-color: #665544;
+      }
+
+      input.submit:active {
+        background-color: chocolate;
+      }
+
+      input.text {
+        color: #cccccc;
+      }
+
+      input.text:focus {
+        color: #665544;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Code Coup Excercise 04</h1>
+    <form action="form-responses/new" method="POST">
+
+      <label for="firstname">firstname</label>
+      <input type="text" class="text" name="firstname" id="firstname" value="default" size="100" autofocus><br><br>
+      <label for="pswd">password</label>
+      <input type="password" id="password" name="pswd"><br><br>
+      <label for="userEmail">email</label>
+      <input type="email" name="userEmail" id="userEmail" placeholder="hello@site.com"><br><br>
+
+      <label for="weird">선택</label>
+      <input type="radio" name="weird" value="code-blue" checked>
+      <span>이것을 고르세요!</span>
+      <input type="radio" name="weird" value="code-red">
+      <span>아니면 이것을 고르세요!</span><br><br>
+
+      <labal for="optin">약관</labal>
+      <input type="checkbox" name="optin" value="trusting" checked>
+      약관에 전부 동의합니다.
+      <input type="checkbox" name="optout" value="skeptical" disabled>
+      잠시만요. 이건 뭐죠?<br><br>
+
+      <label for="car">car</label>
+      <select name="car">
+        <optgroup label="스위스 자동차">
+          <option value="boring">Volvo</option>
+          <option value="cool">Honda</option>
+        </optgroup>
+      </select><br><br>
+
+      <label for="user_message">user_message</label>
+      <textarea name="user_message" rows="8" cols="40" placeholder="텍스트를 입력하세요"></textarea><br><br>
+
+      <label for="date">날짜</label>
+      <input type="date" name="date" id="name"><br><br>
+
+      <label for="color">색깔</label>
+      <input type="color" name="color" id="color"><br><br>
+
+      <label for="number">number</label>
+      <input type="number" name="number" id="number"><br><br>
+
+      <label for="month">month</label>
+      <input type="month" name="month" id="month"><br><br>
+
+      <label for="range">range</label>
+      <input type="range" name="range" id="range"><br><br>
+
+      <label for="search">search</label>
+      <input type="search" name="search" id="search"><br><br>
+
+      <label for="tel">tel</label>
+      <input type="tel" name="tel" id="tel"><br><br>
+
+      <label for="time">time</label>
+      <input type="time" name="time" id="time"><br><br>
+
+      <label for="url">url</label>
+      <input type="url" name="url" id="url"><br><br>
+
+      <label for="week">week</label>
+      <input type="week" name="week" id="week"><br><br>
+
+      <label for="country_code">country code</label>
+      <input type="text" name="country_code" pattern="[A-Za-z]{3}"><br><br>
+
+      <label for="maxlength">maxlength</label>
+      <input type="text" name="maxlength" maxlength="5"><br><br>
+
+      <label for="min">min</label>
+      <input type="number" name="min" min="5"><br><br>
+
+      <label for="readonly">readonly</label>
+      <input type="text" name="readonly" readonly="read" value="hello"><br><br>
+
+      <label for="required">required</label>
+      <input type="text" name="required" required><br><br>
+
+      <input type="submit" class="submit">
+
+    </form>
+
+  </body>
+</html>

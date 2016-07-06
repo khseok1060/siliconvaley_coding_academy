@@ -1,0 +1,22 @@
+#header {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#introduction {
+  color: gray;
+}
+
+#nav {
+  float: left;
+}
+
+#important {
+  color: red;
+}
+
+.box {
+  width: 70px;
+  height: auto;
+  float: left;
+}

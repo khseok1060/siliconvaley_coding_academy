@@ -1,0 +1,1 @@
+$('#blurEffect').blur();
